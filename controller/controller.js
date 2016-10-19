@@ -147,7 +147,7 @@ exports.tree = function *() {
     var vid = this.params.vid;
     console.log(vid);
     var data = yield infectservice.tree(vid);
-    this.body = data;
+    this.body = {'head':{code:200,msg:'success'},'data':data};
 }
 exports.shareVirus = function *() {
     var vid = this.params.vid;
@@ -159,7 +159,7 @@ exports.shareVirus = function *() {
 exports.graph = function *() {
     var vid = this.params.vid;
     var data = yield infectservice.graph(vid);
-    this.body = data;
+    this.body = {'head':{code:200,msg:'success'},'data':data};
 }
 exports.hotvirus = function *() {
     var data = yield infectservice.hotvirus();

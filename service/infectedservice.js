@@ -154,7 +154,6 @@ exports.tree = function *(vid) {
             delete  item.parent
         }
     })
-    console.log(data);
     var dataMap = data.reduce(function(map, node) {
         map[node.name] = node;
         return map;

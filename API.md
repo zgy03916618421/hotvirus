@@ -65,3 +65,68 @@ http GET /virusdetail/6c60d75aff6e42f7cf20b1f03f8fe6b3
   }
 }
 ```
+
+###传染路径
+```bash
+GET /tree/:vid
+```
+Params
+
+|name|required|type|located in|description|
+|:----:|:--------:|:----:|:----------:|:-----------:|
+|vid|true|string|params|卡片id|
+
+Example:
+```bash
+http GET /tree/6c60d75aff6e42f7cf20b1f03f8fe6b3
+{
+  "head": {
+    "code": 200,
+    "msg": "success"
+  },
+  "data": [
+    {
+      "name": "ow3LFjvMxVYb7VV6zhrPyB0eWPOs",
+      "children": [
+        {
+          "name": "ow3LFjnIQsE54d3JwiQhO7belkm0",
+          "parent": "ow3LFjvMxVYb7VV6zhrPyB0eWPOs",
+          "children": [
+            {
+              "name": "ow3LFjk9rmsueoiCKBta03hAG6D0",
+              "parent": "ow3LFjnIQsE54d3JwiQhO7belkm0",
+              "children": [
+                {
+                  "name": "ow3LFjhrlr4wYZqFI6ezTqw5qG4Y",
+                  "parent": "ow3LFjk9rmsueoiCKBta03hAG6D0"
+                },
+                {
+                  "name": "ow3LFjsXosP1j-zDmKpRHr768oxU",
+                  "parent": "ow3LFjk9rmsueoiCKBta03hAG6D0",
+                  "children": [
+                    {
+                      "name": "ow3LFjuNsfZNVCia5nXnBJQwNaA0",
+                      "parent": "ow3LFjsXosP1j-zDmKpRHr768oxU"
+                    },
+                    {
+                      "name": "ow3LFjv6dz3CBG1hTnivu5l37C14",
+                      "parent": "ow3LFjsXosP1j-zDmKpRHr768oxU"
+                    },
+                    {
+                      "name": "ow3LFjmxBPoDvoqM7ZS3y6LE0wVM",
+                      "parent": "ow3LFjsXosP1j-zDmKpRHr768oxU",
+                      "children": [
+                        {
+                          "name": "ow3LFjiOHIk4a48Xs8js2GNN3dI0",
+                          "parent": "ow3LFjmxBPoDvoqM7ZS3y6LE0wVM",
+                          "children": [
+                            {
+                              "name": "ow3LFjgQrrcq1l_pWS4BMvcD_YtU",
+                              "parent": "ow3LFjiOHIk4a48Xs8js2GNN3dI0"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    ..........
+```
