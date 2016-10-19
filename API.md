@@ -130,3 +130,59 @@ http GET /tree/6c60d75aff6e42f7cf20b1f03f8fe6b3
                     },
                     ..........
 ```
+
+###分享路径
+```bash
+GET /graph/:vid
+```
+Params
+
+|name|required|type|located in|description|
+|:----:|:--------:|:----:|:----------:|:-----------:|
+|vid|true|string|params|卡片id|
+
+Example:
+```bash
+{
+  "head": {
+    "code": 200,
+    "msg": "success"
+  },
+  "data": [
+    {
+      "source": "周光耀",
+      "target": "书子",
+      "label": "d56dec74d6102bff730c37f31b582bf4"
+    },
+    {
+      "source": "书子",
+      "target": "书子",
+      "label": "d56dec74d6102bff730c37f31b582bf4"
+    },
+    {
+      "source": "书子",
+      "target": "书子",
+      "label": "d56dec74d6102bff730c37f31b582bf4"
+    },
+    {
+      "source": "书子",
+      "target": "Haihai Fu",
+      "label": "d56dec74d6102bff730c37f31b582bf4"
+    },
+    {
+      "source": "Haihai Fu",
+      "target": "海海",
+      "label": "d56dec74d6102bff730c37f31b582bf4"
+    },
+    {
+      "source": "书子",
+      "target": "seatNumber_豪",
+      "label": "d56dec74d6102bff730c37f31b582bf4"
+    },
+    {
+      "source": "书子",
+      "target": "莫希",
+      "label": "d56dec74d6102bff730c37f31b582bf4"
+    },
+    ...........
+```
