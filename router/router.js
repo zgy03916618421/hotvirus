@@ -5,6 +5,9 @@ var parse = require('co-busboy');
 var router = require('koa-router')();
 var C = require('../controller/controller');
 var fs = require('fs');
+router.get('/test',function *() {
+    this.body = 'hello';
+})
 router.post('/login',C.login);
 router.get('/oauth',C.oauth);
 router.post('/uploadpic',C.upPic);
