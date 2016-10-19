@@ -162,7 +162,8 @@ exports.graph = function *() {
     this.body = {'head':{code:200,msg:'success'},'data':data};
 }
 exports.hotvirus = function *() {
-    var data = yield infectservice.hotvirus();
+    var limit = parseInt(this.query.limit);
+    var data = yield infectservice.hotvirus(limit);
     this.body={'head':{code:200,msg:'success'},'data':data};
 }
 exports.virusdetail = function *() {

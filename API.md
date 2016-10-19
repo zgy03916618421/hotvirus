@@ -4,6 +4,12 @@
 ```bash
 GET /hotvirus
 ```
+Params
+
+|name|required|type|located in|description|
+|:----:|:--------:|:----:|:----------:|:-----------:|
+|limit|true|string|query|查询条目数|
+
 Example:
 ```bash
 http GET /hotvirus
