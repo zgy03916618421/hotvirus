@@ -24,5 +24,5 @@ router.get('/tree/:vid',C.tree);
 router.get('/getshare/:carryid/:vid/:userid',C.shareVirus);
 router.get('/graph/:vid',C.graph);
 router.get('/hotvirus',C.hotvirus);
-router.get('/virusdetail/:vid')
+router.get('/virusdetail/:vid',C.virusdetail);
 module.exports = router

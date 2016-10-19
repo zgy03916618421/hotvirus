@@ -16,4 +16,4 @@ app.use(cors());
 app.use(bodyParse());
 app.use(serve(__dirname +'/static'));
 app.use(router.routes()).use(router.allowedMethods());
-app.listen(10003);
+app.listen(3000);

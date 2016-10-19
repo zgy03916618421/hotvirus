@@ -163,5 +163,10 @@ exports.graph = function *() {
 }
 exports.hotvirus = function *() {
     var data = yield infectservice.hotvirus();
-    this.body=data;
+    this.body={'head':{code:200,msg:'success'},'data':data};
+}
+exports.virusdetail = function *() {
+    var vid = this.params.vid;
+    var data = yield infectservice.getVirusById(vid);
+    this.body = {'head':{code:200,msg:'success'},'data':data};
 }

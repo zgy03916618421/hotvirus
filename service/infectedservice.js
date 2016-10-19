@@ -212,7 +212,8 @@ exports.hotvirus = function *() {
         {$match:{action:"spread"}},
         {$group:{_id:{vid:"$vid"},count:{$sum:1}}},
         {$sort:{count:-1}},
-        {$limit:5}
+        {$limit:10},
+        {$project:{vid:"$_id.vid",count:1,_id:0}}
     ]).toArray();
     return vids;
 }
